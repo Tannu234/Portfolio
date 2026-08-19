@@ -1,0 +1,46 @@
+:root {
+  --bg-main: #0A0F0D;
+  --bg-card: #111812;
+  --primary: #22C55E;
+  --secondary: #4ADE80;
+  --text-heading: #F0FFF4;
+  --text-body: #9CA89F;
+  --border: #1F2E24;
+  --gradient-primary: linear-gradient(90deg, #22C55E, #4ADE80);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-main);
+  color: var(--text-body);
+  font-family: 'Jost', sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+  color: var(--text-heading);
+  font-family: 'Cormorant', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
