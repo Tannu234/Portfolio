@@ -113,8 +113,8 @@
 }
 
 .hero-visual {
-  flex: 1;
-  min-width: 300px;
+  flex: 0 0 300px;
+  width: 300px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -123,45 +123,74 @@
 
 .glow-circle {
   position: absolute;
-  width: 320px;
-  height: 320px;
+  width: 260px;
+  height: 260px;
   background: var(--primary);
   border-radius: 50%;
   filter: blur(100px);
   opacity: 0.25;
 }
-.hero-image {
+.hero-photo {
   width: 300px;
+  max-width: 100%;
   height: auto;
-
-  position: absolute;
-  right: 7%;
-  top: 50%;
-  transform: translateY(-50%);
-
-  z-index: 2;
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
 }
 
-
 @media (max-width: 768px) {
-  .hero-name {
-    font-size: 2.8rem;
-  }
-  .hero-role {
-    font-size: 1.2rem;
-  }
   .hero-inner {
     flex-direction: column;
     text-align: center;
   }
-  .hero-buttons {
-    justify-content: center;
+
+  .hero-text {
+    order: 1;
+    width: 100%;
+    min-width: 0;
   }
-  .hero-socials {
-    justify-content: center;
+
+  .hero-visual {
+    order: 2;
+    flex: 0 0 auto;
+    width: 100%;
+    margin-top: 24px;
   }
+
+  .hero-name {
+    font-size: 2.4rem;
+  }
+
+  .hero-role {
+    font-size: 1.05rem;
+  }
+
   .hero-desc {
     margin-left: auto;
     margin-right: auto;
+    font-size: 0.95rem;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .hero-visual {
+  flex: 0 0 300px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+  .glow-circle {
+    width: 150px;
+    height: 150px;
   }
 }

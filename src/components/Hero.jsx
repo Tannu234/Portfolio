@@ -50,10 +50,10 @@ function Hero() {
         <div className="hero-visual">
           <div className="glow-circle"></div>
           <img
-            src={tamanna}
-            alt="Tamanna Baghel"
-            className="hero-image"
-            />
+           src={tamanna}
+           alt="Tamanna Baghel"
+           className="hero-photo"
+           />
         </div>
       </div>
     </section>
